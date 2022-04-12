@@ -166,7 +166,7 @@ width: auto;
 
 .matrim {
     display: block;
-    background-color: rgb(156, 78, 78);
+    background-color: rgb(180, 140, 87);
     width: 24.75rem;
     height: 31rem;
     border-radius: 8px;
@@ -181,7 +181,7 @@ width: auto;
 
 .doble {
     display: block;
-    background-color: rgb(156, 78, 78);
+    background-color: rgb(180, 140, 87);
     width: 27rem;
     height: 33rem;
     border-radius: 8px;
@@ -197,7 +197,7 @@ width: auto;
 
 .triple {
     display: block;
-    background-color: rgb(156, 78, 78);
+    background-color: rgb(180, 140, 87);
     width: 27rem;
     height: 33rem;
     border-radius: 8px;
@@ -248,7 +248,7 @@ button {
    }
 
    .fondo {
-    background-color: black;
+    background-color: rgb(71, 45, 45);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -331,3 +331,24 @@ button {
             "container_pileta";
         }
     }
+
+    img:hover {
+        transform: scale(1.5);
+    }
+
+    @keyframes bienvenida {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .animacion {
+        animation-duration: 2s;
+        animation-name: bienvenida;
+        animation-iteration-count: infinite;
+    }
+
+ 
