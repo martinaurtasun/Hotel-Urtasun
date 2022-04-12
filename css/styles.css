@@ -1,0 +1,333 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+    font-size: 70%;
+}
+
+.colorMarron {
+    color: rgb(146, 129, 71);
+}
+
+.fuenteGrande {
+    text-align: center;
+    color: black;
+    font-size: 70px;
+    background-color: rgb(150, 99, 99);
+    font-family: 'Dancing Script';
+}
+
+.fuenteMediana {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(156, 78, 78);
+}
+
+p {
+    color: white; 
+    text-align: center;
+    width: 80%;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+ul {
+    text-align: left;
+    position: sticky;
+    height: 50px;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 2px 0 0 12px;
+    top: -1px;
+}
+
+li {
+    color: white;
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 20px;
+  text-align: right;
+  margin: auto;
+}
+
+a {
+    font-size: 15px;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+}
+
+/*INDEX*/
+.bienvenidos {
+    color: beige;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Fuzzy Bubbles';
+}
+
+.mapa {
+    padding: 5%;
+}
+
+/*CONTACTO*/
+.datosContacto {
+    font-size: 20px;
+    background-color: rgb(150, 99, 99);
+    border-radius: 8rem;
+    display: block;
+    width: 50rem;
+    height: 45rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    background-color: beige;
+    border-radius: 3rem;
+}
+
+.ingresar {
+    padding: 1%;
+    text-align: center;
+}
+
+.suscripcion {
+    margin: 10px;
+    font-size: small;
+}
+
+/*HISTORIA*/
+.cursiva {
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.5;
+    color: wheat;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+/*NOSOTROS*/
+.textoNosotros {
+    color: rosybrown; 
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    width: 60%;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.imgNosotros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.frente {
+    width: 30rem;
+    margin: 2rem;
+}
+
+.jardin {
+    width: 30rem;
+    margin: 2rem;
+}
+
+.restoHotel {
+    width: 30rem;
+    margin: 2rem;
+}
+
+/*RESERVAS*/
+.cardTitle {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Fuzzy Bubbles';
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+
+.reservas {
+text-align: center;
+margin: 0.5rem;
+padding: 0.5rem;
+width: auto;
+}
+
+.matrim {
+    display: block;
+    background-color: rgb(156, 78, 78);
+    width: 24.75rem;
+    height: 31rem;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.matrim img {
+    width: 250px;
+    padding: 1rem;
+}
+
+.doble {
+    display: block;
+    background-color: rgb(156, 78, 78);
+    width: 27rem;
+    height: 33rem;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.doble img {
+    width: 215px;
+    padding: 1rem;
+    margin-left: 3rem;
+}
+
+.triple {
+    display: block;
+    background-color: rgb(156, 78, 78);
+    width: 27rem;
+    height: 33rem;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.triple img {
+    width: 180px;
+    padding: 1rem;
+    margin-left: 4.5rem;
+}
+
+.habitaciones {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    font-size: 15px;
+    border-radius: 15px;
+    color: beige;
+    background-color: black;
+}
+
+/*LINK WHATSAPP*/
+.wa {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.enlaceWA {
+    size: 20%;
+    position: fixed;
+    right: 40px;
+    bottom: 10px;
+    z-index: 100;
+    color: white;
+    background-color: #d6ffd4;
+    box-shadow: 2px 2px 6px rgba(180, 175, 175, 0.4);
+    border-radius: 50%;
+    right: 30px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    padding: 1.5%;
+   }
+
+   .fondo {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.9fr 1.1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 11px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "container_lado container_lado container_lado"
+      "container_pileta container_flor container_frente"
+      "container_pileta container_flor container_frente";
+  }
+  
+  .container_lado {
+      grid-area: container_lado;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .container_lado img {
+        width: 600px;
+        height: 300px;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+
+  .container_frente {
+      grid-area: container_frente;
+      display: flex;
+      margin-top: 25px;
+      justify-content: center;
+    }
+
+    .container_frente img {
+        width: 350px;
+        height: 480px;
+        margin-top: 25px;
+        justify-content: center;
+    }
+
+  .container_flor {
+      grid-area: container_flor;
+      display: flex;
+      margin-top: 25px;
+      justify-content: center;
+    }
+
+    .container_flor img {
+        width: 350px;
+        height: 480px;
+        margin-top: 25px;
+        justify-content: center;
+    }
+  
+  .container_pileta {
+      grid-area: container_pileta;
+      display: flex;
+      margin-top: 25px;
+      justify-content: center;
+    }
+
+    .container_pileta img {
+        width: 350px;
+        height: 480px;
+        margin-top: 25px;
+        justify-content: center;
+    }
+
+    @media (max-width: 767px) {
+        .container {
+            grid-template-areas:
+            "container_lado"
+            "container_frente"
+            "container_flor"
+            "container_pileta";
+        }
+    }
