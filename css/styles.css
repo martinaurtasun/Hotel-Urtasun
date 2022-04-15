@@ -66,6 +66,15 @@ a {
     font-family: 'Fuzzy Bubbles';
 }
 
+.img-index {
+    width: 1100px;
+    height: 450px;
+    padding-bottom: 1rem;
+    padding-left: 15rem;
+    justify-content: center;
+    transform: none;
+}
+
 .mapa {
     padding: 5%;
 }
@@ -77,28 +86,19 @@ a {
     border-radius: 8rem;
     display: block;
     width: 50rem;
-    height: 45rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    height: 52rem;
+    padding: 3rem;
     margin: auto;
     text-align: center;
 }
 
-input {
-    background-color: beige;
-    border-radius: 3rem;
+.inicio-sesion {
+    font-weight: bold;
 }
 
-.ingresar {
-    padding: 1%;
-    text-align: center;
-}
-
-.suscripcion {
-    margin: 10px;
-    font-size: small;
+.registro {
+    padding-top: 1rem;
+    font-weight: bold;
 }
 
 /*HISTORIA*/
@@ -148,6 +148,11 @@ input {
 }
 
 /*RESERVAS*/
+.habitaciones {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .cardTitle {
     color: black;
     text-align: center;
@@ -209,11 +214,6 @@ width: auto;
     width: 180px;
     padding: 1rem;
     margin-left: 4.5rem;
-}
-
-.habitaciones {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 button {
