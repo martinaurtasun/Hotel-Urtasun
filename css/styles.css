@@ -24,6 +24,13 @@ html {
     color: rgb(156, 78, 78);
 }
 
+.fuentePequeña {
+    font-size: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(92, 88, 88);
+}
+
 p {
     color: white; 
     text-align: center;
@@ -33,17 +40,18 @@ p {
 }
 
 ul {
-    text-align: left;
+    text-align: right;
     position: sticky;
-    height: 50px;
+    height: 70px;
     z-index: 1;
     margin: 0 auto;
-    padding: 2px 0 0 12px;
-    top: -1px;
+    top: 0px;
+    background-color: black;
 }
 
 li {
     color: white;
+    position: sticky;
   font-size: 30px;
   display: inline-block;
   margin-right: 20px;
@@ -56,6 +64,14 @@ a {
     color: aliceblue;
     text-decoration: none;
     padding: 20px;
+    position: sticky;
+}
+
+.font-mestizo {
+    font-family: 'Dancing Script';
+    font-size: 45px;
+    text-align: left;
+    position: relative;
 }
 
 /*INDEX*/
@@ -63,20 +79,40 @@ a {
     color: beige;
     font-size: 30px;
     text-align: center;
-    font-family: 'Fuzzy Bubbles';
+}
+
+.hotel-mestizo {
+    text-align: center;
+    font-size: 60px;
+}
+
+.intro-index {
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .img-index {
-    width: 1100px;
-    height: 450px;
-    padding-bottom: 1rem;
-    padding-left: 15rem;
+    width: 800px;
+    height: 500px;
+    padding: 3rem;
     justify-content: center;
+    margin-left: 25rem;
     transform: none;
 }
 
 .mapa {
     padding: 5%;
+}
+
+.select-fecha {
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    background-color: beige;
+    color: black;
+    font-weight: bolder;
 }
 
 /*CONTACTO*/
@@ -128,8 +164,7 @@ a {
 .imgNosotros {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .frente {
@@ -151,6 +186,7 @@ a {
 .habitaciones {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center
 }
 
 .cardTitle {
