@@ -407,7 +407,7 @@ button {
         color: white;
     }
 
-    a:hover :not(::first-line){
+    a:hover :not(:first-of-type){
         text-decoration: underline;
         color: rgb(150, 99, 99);
     }
