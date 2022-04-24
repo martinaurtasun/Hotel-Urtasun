@@ -6,10 +6,6 @@ html {
     font-size: 70%;
 }
 
-.colorMarron {
-    color: rgb(146, 129, 71);
-}
-
 .fuenteGrande {
     text-align: center;
     color: black;
@@ -22,6 +18,7 @@ html {
     font-size: 30px;
     text-align: center;
     color: rgb(156, 78, 78);
+    margin: 10px;
 }
 
 .fuentePequeña {
@@ -29,6 +26,11 @@ html {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(92, 88, 88);
+}
+
+.bold {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
@@ -76,7 +78,7 @@ a {
 
 /*INDEX*/
 .bienvenidos {
-    color: beige;
+    color: rgb(46, 46, 46);
     font-size: 30px;
     text-align: center;
 }
@@ -84,33 +86,38 @@ a {
 .hotel-mestizo {
     text-align: center;
     font-size: 60px;
+    margin-top: 15px;
+    color: rgb(150, 99, 99);
 }
 
 .intro-index {
     text-align: center;
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(32, 32, 32);
 }
 
 .img-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 800px;
     height: 500px;
     padding: 3rem;
-    justify-content: center;
-    margin-left: 25rem;
-    transform: none;
+    margin-left: 23rem;
 }
 
 .mapa {
     padding: 5%;
+    justify-content: center;
 }
 
 .select-fecha {
-    border-radius: 5px;
+    border-radius: 8rem;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
-    background-color: beige;
+    background-color: rgb(150, 99, 99);
     color: black;
     font-weight: bolder;
 }
@@ -119,13 +126,15 @@ a {
 .datosContacto {
     font-size: 20px;
     background-color: rgb(150, 99, 99);
-    border-radius: 8rem;
+    border-radius: 6rem;
     display: block;
     width: 50rem;
     height: 52rem;
     padding: 3rem;
     margin: auto;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 .inicio-sesion {
@@ -142,7 +151,7 @@ a {
     font-style: italic;
     font-weight: bold;
     line-height: 1.5;
-    color: wheat;
+    color: rgb(150, 99, 99);
     font-size: 20px;
     text-align: center;
     width: 80%;
@@ -152,13 +161,12 @@ a {
 
 /*NOSOTROS*/
 .textoNosotros {
-    color: rosybrown; 
-    font-style: italic;
-    font-weight: bold;
+    color: rosybrown;
     text-align: center;
     width: 60%;
-    font-size: 15px;
+    font-size: 20px;
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .imgNosotros {
@@ -168,18 +176,18 @@ a {
 }
 
 .frente {
-    width: 30rem;
-    margin: 2rem;
+    width: 40rem;
+    margin: 1rem;
 }
 
 .jardin {
     width: 30rem;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .restoHotel {
-    width: 30rem;
-    margin: 2rem;
+    width: 40rem;
+    margin: 1rem;
 }
 
 /*RESERVAS*/
@@ -193,7 +201,7 @@ a {
     color: black;
     text-align: center;
     font-size: 20px;
-    font-family: 'Fuzzy Bubbles';
+    font-family:Georgia, 'Times New Roman', Times, serif;
     padding: 5px 5px;
     margin: 5px 5px;
 }
@@ -203,53 +211,56 @@ text-align: center;
 margin: 0.5rem;
 padding: 0.5rem;
 width: auto;
+font-family: Helvetica, sans-serif;
 }
 
 .matrim {
     display: block;
-    background-color: rgb(180, 140, 87);
-    width: 24.75rem;
+    background-color: rgb(150, 99, 99);
+    width: 45rem;
     height: 31rem;
-    border-radius: 8px;
+    border-radius: 6rem;
     padding: 2rem;
     margin: 1rem;
 }
 
 .matrim img {
-    width: 250px;
+    width: 260px;
     padding: 1rem;
+    margin-left: 10rem;
 }
 
 .doble {
     display: block;
-    background-color: rgb(180, 140, 87);
-    width: 27rem;
+    background-color: rgb(150, 99, 99);
+    width: 47rem;
     height: 33rem;
-    border-radius: 8px;
+    border-radius: 6rem;
     padding: 1rem;
     margin: 1rem;
 }
 
 .doble img {
-    width: 215px;
+    width: 231px;
     padding: 1rem;
     margin-left: 3rem;
+    margin-left: 12rem;
 }
 
 .triple {
     display: block;
-    background-color: rgb(180, 140, 87);
-    width: 27rem;
+    background-color: rgb(150, 99, 99);
+    width: 47rem;
     height: 33rem;
-    border-radius: 8px;
+    border-radius: 6rem;
     padding: 1rem;
     margin: 1rem;
 }
 
 .triple img {
-    width: 180px;
+    width: 195px;
     padding: 1rem;
-    margin-left: 4.5rem;
+    margin-left: 14.5rem;
 }
 
 button {
@@ -257,6 +268,8 @@ button {
     border-radius: 15px;
     color: beige;
     background-color: black;
+    padding: 5px;
+    margin-left: 25px;
 }
 
 /*LINK WHATSAPP*/
@@ -284,7 +297,7 @@ button {
    }
 
    .fondo {
-    background-color: rgb(71, 45, 45);
+    background-color: beige;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -369,7 +382,7 @@ button {
     }
 
     img:hover {
-        transform: scale(1.5);
+        transform: scale(1.1);
     }
 
     @keyframes bienvenida {
@@ -385,6 +398,12 @@ button {
         animation-duration: 2s;
         animation-name: bienvenida;
         animation-iteration-count: infinite;
+    }
+
+    footer {
+        background-color: black;
+        padding: 10px;
+        color: white;
     }
 
  
