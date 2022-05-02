@@ -99,19 +99,17 @@ a {
 }
 
 .img-index {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   width: 800px;
   height: 500px;
   padding: 3rem;
   margin-left: 23rem;
-  align-items: center;
+  justify-content: center;
 }
 
 .mapa {
   padding: 5%;
   justify-content: center;
+  margin-left: 15rem;
 }
 
 .select-fecha {
@@ -124,6 +122,36 @@ a {
   font-weight: bolder;
 }
 
+@keyframes bienvenida {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+img:hover {
+  transform: scale(1.1);
+}
+
+.animacion {
+  animation-duration: 2s;
+  animation-name: bienvenida;
+  animation-iteration-count: infinite;
+}
+
+@media (max-width: 767px) {
+  img-index {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+    padding: 3rem;
+    margin-left: 15rem;
+    align-items: center;
+  }
+}
 /*CONTACTO*/
 .datosContacto {
   font-size: 20px;
@@ -376,24 +404,17 @@ button {
     grid-template-areas: "container_lado" "container_frente" "container_flor" "container_pileta";
   }
 }
-img:hover {
-  transform: scale(1.1);
-}
-
-@keyframes bienvenida {
-  0% {
-    opacity: 0;
+@media (max-width: 767px) {
+  ul {
+    text-align: right;
+    position: sticky;
+    height: 125px;
+    z-index: 1;
+    margin: 0 auto;
+    top: 0px;
+    background-color: black;
   }
-  100% {
-    opacity: 1;
-  }
 }
-.animacion {
-  animation-duration: 2s;
-  animation-name: bienvenida;
-  animation-iteration-count: infinite;
-}
-
 footer {
   background-color: black;
   padding: 10px;
