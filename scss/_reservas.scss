@@ -1,0 +1,78 @@
+/* RESERVAS */
+.habitaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.cardTitle {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+
+.reservas {
+text-align: center;
+margin: 0.5rem;
+padding: 0.5rem;
+width: auto;
+font-family: Helvetica, sans-serif;
+}
+
+.matrim {
+    display: block;
+    background-color: rgb(150, 99, 99);
+    @include tamanio(45rem, 31rem);
+    border-radius: 6rem;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.matrim img {
+    width: 260px;
+    padding: 1rem;
+    margin-left: 10rem;
+}
+
+.doble {
+    display: block;
+    background-color: rgb(150, 99, 99);
+    @include tamanio(47rem, 33rem);
+    border-radius: 6rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.doble img {
+    width: 231px;
+    padding: 1rem;
+    margin-left: 3rem;
+    margin-left: 12rem;
+}
+
+.triple {
+    display: block;
+    background-color: rgb(150, 99, 99);
+    @include tamanio(47rem, 33rem);
+    border-radius: 6rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.triple img {
+    width: 195px;
+    padding: 1rem;
+    margin-left: 14.5rem;
+}
+
+button {
+    font-size: 15px;
+    border-radius: 15px;
+    color: beige;
+    background-color: black;
+    padding: 5px;
+    margin-left: 25px;
+}

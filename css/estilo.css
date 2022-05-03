@@ -1,83 +1,5 @@
 @charset "UTF-8";
-* {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-html {
-  font-size: 70%;
-}
-
-.fuenteGrande {
-  text-align: center;
-  color: black;
-  font-size: 70px;
-  background-color: rgb(150, 99, 99);
-  font-family: "Dancing Script";
-}
-
-.fuenteMediana {
-  font-size: 30px;
-  text-align: center;
-  color: rgb(156, 78, 78);
-  margin: 10px;
-}
-
-.fuentePequeña {
-  font-size: 12px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(92, 88, 88);
-}
-
-.bold {
-  font-weight: bold;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-p {
-  color: white;
-  text-align: center;
-  width: 80%;
-  font-size: 15px;
-  margin: 0 auto;
-}
-
-ul {
-  text-align: right;
-  position: sticky;
-  height: 70px;
-  z-index: 1;
-  margin: 0 auto;
-  top: 0px;
-  background-color: black;
-}
-
-li {
-  color: white;
-  position: sticky;
-  font-size: 30px;
-  display: inline-block;
-  margin-right: 20px;
-  text-align: right;
-  margin: auto;
-}
-
-a {
-  font-size: 15px;
-  color: aliceblue;
-  text-decoration: none;
-  padding: 20px;
-  position: sticky;
-}
-
-.font-mestizo {
-  font-family: "Dancing Script";
-  font-size: 45px;
-  text-align: left;
-  position: relative;
-}
-
-/*INDEX*/
+/* INDEX */
 .bienvenidos {
   color: rgb(46, 46, 46);
   font-size: 30px;
@@ -110,6 +32,7 @@ a {
   padding: 5%;
   justify-content: center;
   margin-left: 15rem;
+  align-items: center;
 }
 
 .select-fecha {
@@ -152,7 +75,7 @@ img:hover {
     align-items: center;
   }
 }
-/*CONTACTO*/
+/* CONTACTO */
 .datosContacto {
   font-size: 20px;
   background-color: rgb(150, 99, 99);
@@ -176,7 +99,7 @@ img:hover {
   font-weight: bold;
 }
 
-/*HISTORIA*/
+/* HISTORIA */
 .cursiva {
   font-style: italic;
   font-weight: bold;
@@ -189,7 +112,77 @@ img:hover {
   padding-bottom: 2rem;
 }
 
-/*NOSOTROS*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.9fr 1.1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 11px;
+  grid-auto-flow: row;
+  grid-template-areas: "container_lado container_lado container_lado" "container_pileta container_flor container_frente" "container_pileta container_flor container_frente";
+}
+
+.container_lado {
+  grid-area: container_lado;
+  display: flex;
+  justify-content: center;
+}
+
+.container_lado img {
+  width: 600px;
+  height: 300px;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.container_frente {
+  grid-area: container_frente;
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.container_frente img {
+  width: 350px;
+  height: 480px;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.container_flor {
+  grid-area: container_flor;
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.container_flor img {
+  width: 350px;
+  height: 480px;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.container_pileta {
+  grid-area: container_pileta;
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.container_pileta img {
+  width: 350px;
+  height: 480px;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .container {
+    grid-template-areas: "container_lado" "container_frente" "container_flor" "container_pileta";
+  }
+}
+/* NOSOTROS */
 .textoNosotros {
   color: rosybrown;
   text-align: center;
@@ -220,7 +213,7 @@ img:hover {
   margin: 1rem;
 }
 
-/*RESERVAS*/
+/* RESERVAS */
 .habitaciones {
   display: flex;
   flex-wrap: wrap;
@@ -302,6 +295,84 @@ button {
   margin-left: 25px;
 }
 
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+html {
+  font-size: 70%;
+}
+
+.fuenteGrande {
+  text-align: center;
+  color: black;
+  font-size: 70px;
+  background-color: rgb(150, 99, 99);
+  font-family: "Dancing Script";
+}
+
+.fuenteMediana {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(156, 78, 78);
+  margin: 10px;
+}
+
+.fuentePequeña {
+  font-size: 12px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(92, 88, 88);
+}
+
+.bold {
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+  color: white;
+  text-align: center;
+  width: 80%;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+ul {
+  text-align: right;
+  position: sticky;
+  height: 70px;
+  z-index: 1;
+  margin: 0 auto;
+  top: 0px;
+  background-color: black;
+}
+
+li {
+  color: white;
+  position: sticky;
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 20px;
+  text-align: right;
+  margin: auto;
+}
+
+a {
+  font-size: 15px;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 20px;
+  position: sticky;
+}
+
+.font-mestizo {
+  font-family: "Dancing Script";
+  font-size: 45px;
+  text-align: left;
+  position: relative;
+}
+
 /*LINK WHATSAPP*/
 .wa {
   display: block;
@@ -334,76 +405,6 @@ button {
   height: 100vh;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.9fr 1.1fr 1fr;
-  grid-auto-columns: 1fr;
-  gap: 0px 11px;
-  grid-auto-flow: row;
-  grid-template-areas: "container_lado container_lado container_lado" "container_pileta container_flor container_frente" "container_pileta container_flor container_frente";
-}
-
-.container_lado {
-  grid-area: container_lado;
-  display: flex;
-  justify-content: center;
-}
-
-.container_lado img {
-  width: 600px;
-  height: 300px;
-  margin-top: 30px;
-  margin-left: 15px;
-}
-
-.container_frente {
-  grid-area: container_frente;
-  display: flex;
-  margin-top: 25px;
-  justify-content: center;
-}
-
-.container_frente img {
-  width: 350px;
-  height: 480px;
-  margin-top: 25px;
-  justify-content: center;
-}
-
-.container_flor {
-  grid-area: container_flor;
-  display: flex;
-  margin-top: 25px;
-  justify-content: center;
-}
-
-.container_flor img {
-  width: 350px;
-  height: 480px;
-  margin-top: 25px;
-  justify-content: center;
-}
-
-.container_pileta {
-  grid-area: container_pileta;
-  display: flex;
-  margin-top: 25px;
-  justify-content: center;
-}
-
-.container_pileta img {
-  width: 350px;
-  height: 480px;
-  margin-top: 25px;
-  justify-content: center;
-}
-
-@media (max-width: 767px) {
-  .container {
-    grid-template-areas: "container_lado" "container_frente" "container_flor" "container_pileta";
-  }
-}
 @media (max-width: 767px) {
   ul {
     text-align: right;

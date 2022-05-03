@@ -1,0 +1,22 @@
+/* CONTACTO */
+.datosContacto {
+    font-size: 20px;
+    background-color: rgb(150, 99, 99);
+    border-radius: 6rem;
+    display: block;
+    @include tamanio(50rem, 52rem);
+    padding: 3rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.inicio-sesion {
+    font-weight: bold;
+}
+
+.registro {
+    padding-top: 1rem;
+    font-weight: bold;
+}
