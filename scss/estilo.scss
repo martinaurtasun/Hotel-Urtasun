@@ -3,6 +3,7 @@
 @import "historia";
 @import "nosotros";
 @import "reservas";
+@import "maps";
 
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -12,8 +13,12 @@ html {
     font-size: 70%;
 }
 
-.fuenteGrande {
+.fuente {
     text-align: center;
+}
+
+.fuenteGrande {
+    @extend .fuente;
     color: black;
     font-size: 70px;
     background-color: rgb(150, 99, 99);
@@ -21,15 +26,15 @@ html {
 }
 
 .fuenteMediana {
+    @extend .fuente;
     font-size: 30px;
-    text-align: center;
     color: rgb(156, 78, 78);
     margin: 10px;
 }
 
 .fuentePequeña {
+    @extend .fuente;
     font-size: 12px;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(92, 88, 88);
 }

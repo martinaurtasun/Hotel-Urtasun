@@ -295,6 +295,19 @@ button {
   margin-left: 25px;
 }
 
+/* EJEMPLO MAPS */
+.plantas {
+  color: green;
+}
+
+.plantas {
+  color: pink;
+}
+
+.plantas {
+  color: white;
+}
+
 * {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -303,8 +316,11 @@ html {
   font-size: 70%;
 }
 
-.fuenteGrande {
+.fuente, .fuentePequeña, .fuenteMediana, .fuenteGrande {
   text-align: center;
+}
+
+.fuenteGrande {
   color: black;
   font-size: 70px;
   background-color: rgb(150, 99, 99);
@@ -313,14 +329,12 @@ html {
 
 .fuenteMediana {
   font-size: 30px;
-  text-align: center;
   color: rgb(156, 78, 78);
   margin: 10px;
 }
 
 .fuentePequeña {
   font-size: 12px;
-  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(92, 88, 88);
 }
