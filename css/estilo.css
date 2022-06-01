@@ -21,7 +21,6 @@
 }
 
 .img-index {
-  size: 4rem;
   display: block;
   margin: 0 auto;
   padding: 3rem;
@@ -75,6 +74,7 @@ img:hover {
     align-items: center;
   }
 }
+
 /* CONTACTO */
 .datosContacto {
   font-size: 20px;
