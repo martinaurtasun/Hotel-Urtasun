@@ -21,18 +21,16 @@
 }
 
 .img-index {
-  display: block;
-  margin: 0 auto;
-  padding: 3rem;
-  justify-content: center;
-}
+    width: 50rem;
+    margin: 2rem;
+    padding: 3rem;
+  }
 
 .mapa {
-  padding: 5%;
-  justify-content: center;
-  margin-left: 15rem;
-  align-items: center;
-}
+  display: block;
+    margin: 0 auto;
+    padding: 3rem;
+  }
 
 .select-fecha {
   border-radius: 8rem;
