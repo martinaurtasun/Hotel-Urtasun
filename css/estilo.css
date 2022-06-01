@@ -21,10 +21,10 @@
 }
 
 .img-index {
-  width: 800px;
-  height: 500px;
+  size: 4rem;
+  display: block;
+  margin: 0 auto;
   padding: 3rem;
-  margin-left: 23rem;
   justify-content: center;
 }
 
