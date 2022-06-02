@@ -1,85 +1,86 @@
 /* HISTORIA */
 .cursiva {
-    font-style: italic;
-    font-weight: bold;
-    line-height: 1.5;
-    color: rgb(150, 99, 99);
-    font-size: 20px;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.5;
+  color: rgb(150, 99, 99);
+  font-size: 20px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
-.container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.9fr 1.1fr 1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 11px;
-    grid-auto-flow: row;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.9fr 1.1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 11px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "container_lado container_lado container_lado"
+    "container_pileta container_flor container_frente"
+    "container_pileta container_flor container_frente";
+}
+
+.container_lado {
+  grid-area: container_lado;
+  display: flex;
+  justify-content: center;
+}
+
+.container_lado img {
+  @include tamanio(600px, 300px);
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.container_frente {
+  grid-area: container_frente;
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.container_frente img {
+  @include tamanio(350px, 480px);
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.container_flor {
+  grid-area: container_flor;
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.container_flor img {
+  @include tamanio(350px, 480px);
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.container_pileta {
+  grid-area: container_pileta;
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.container_pileta img {
+  @include tamanio(350px, 480px);
+  margin-top: 25px;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .container {
     grid-template-areas:
-      "container_lado container_lado container_lado"
-      "container_pileta container_flor container_frente"
-      "container_pileta container_flor container_frente";
+      "container_lado"
+      "container_frente"
+      "container_flor"
+      "container_pileta";
   }
-  
-  .container_lado {
-      grid-area: container_lado;
-      display: flex;
-      justify-content: center;
-    }
-  
-    .container_lado img {
-        @include tamanio(600px, 300px);
-        margin-top: 30px;
-        margin-left: 15px;
-    }
-
-  .container_frente {
-      grid-area: container_frente;
-      display: flex;
-      margin-top: 25px;
-      justify-content: center;
-    }
-
-    .container_frente img {
-        @include tamanio(350px, 480px);
-        margin-top: 25px;
-        justify-content: center;
-    }
-
-  .container_flor {
-      grid-area: container_flor;
-      display: flex;
-      margin-top: 25px;
-      justify-content: center;
-    }
-
-    .container_flor img {
-        @include tamanio(350px, 480px);
-        margin-top: 25px;
-        justify-content: center;
-    }
-  
-  .container_pileta {
-      grid-area: container_pileta;
-      display: flex;
-      margin-top: 25px;
-      justify-content: center;
-    }
-
-    .container_pileta img {
-        @include tamanio(350px, 480px);
-        margin-top: 25px;
-        justify-content: center;
-    }
-
-    @media (max-width: 767px) {
-        .container {
-            grid-template-areas:
-            "container_lado"
-            "container_frente"
-            "container_flor"
-            "container_pileta";
-        }
-    }
+}

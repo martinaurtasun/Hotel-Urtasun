@@ -20,17 +20,18 @@
   color: rgb(32, 32, 32);
 }
 
-.img-index {
-    width: 50rem;
-    margin: 2rem;
-    padding: 3rem;
-  }
-
+/* .img-index {
+  @include tamanio(800px, 500px);
+  padding: 3rem;
+  margin-left: 23rem;
+  justify-content: center;
+} */
 .mapa {
-  display: block;
-    margin: 0 auto;
-    padding: 3rem;
-  }
+  padding: 5%;
+  justify-content: center;
+  margin-left: 15rem;
+  align-items: center;
+}
 
 .select-fecha {
   border-radius: 8rem;
@@ -72,7 +73,6 @@ img:hover {
     align-items: center;
   }
 }
-
 /* CONTACTO */
 .datosContacto {
   font-size: 20px;
@@ -190,27 +190,51 @@ img:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.imgNosotros {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .galeria {
-  width: 40rem;
-  margin: 1rem;
+  height: 40rem;
+  max-width: 100%;
 }
 
 .jardin {
-  width: 30rem;
-  margin: 1rem;
+  height: 40rem;
+  max-width: 100%;
 }
 
 .restoHotel {
-  width: 40rem;
-  margin: 1rem;
+  height: 40rem;
+  max-width: 100%;
 }
 
+.fondo-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .fondo-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .galeria {
+    width: 40rem;
+    margin: 1rem;
+  }
+
+  .jardin {
+    width: 30rem;
+    margin: 1rem;
+  }
+
+  .restoHotel {
+    width: 40rem;
+    margin: 1rem;
+  }
+}
 /* RESERVAS */
 .habitaciones {
   display: flex;

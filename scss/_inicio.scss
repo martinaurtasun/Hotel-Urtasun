@@ -1,80 +1,81 @@
 @mixin tamanio($width, $height) {
-    width: $width;
-    height: $height;
+  width: $width;
+  height: $height;
 }
 
 /* INDEX */
 .bienvenidos {
-    color: rgb(46, 46, 46);
-    font-size: 30px;
-    text-align: center;
+  color: rgb(46, 46, 46);
+  font-size: 30px;
+  text-align: center;
 }
 
 .hotel-mestizo {
-    text-align: center;
-    font-size: 60px;
-    margin-top: 15px;
-    color: rgb(150, 99, 99);
+  text-align: center;
+  font-size: 60px;
+  margin-top: 15px;
+  color: rgb(150, 99, 99);
 }
 
 .intro-index {
-    text-align: center;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(32, 32, 32);
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(32, 32, 32);
 }
 
-.img-index {
-    @include tamanio(800px, 500px);
-    padding: 3rem;
-    margin-left: 23rem;
-    justify-content: center;
-}
+/* .img-index {
+  @include tamanio(800px, 500px);
+  padding: 3rem;
+  margin-left: 23rem;
+  justify-content: center;
+} */
 
 .mapa {
-    padding: 5%;
-    justify-content: center;
-    margin-left: 15rem;
-    align-items: center;
+  padding: 5%;
+  justify-content: center;
+  margin-left: 15rem;
+  align-items: center;
 }
 
 .select-fecha {
-    border-radius: 8rem;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    position: fixed;
-    background-color: rgb(150, 99, 99);
-    color: black;
-    font-weight: bolder;
+  border-radius: 8rem;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  background-color: rgb(150, 99, 99);
+  color: black;
+  font-weight: bolder;
 }
 
 @keyframes bienvenida {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .animacion {
-    animation-duration: 2s;
-    animation-name: bienvenida;
-    animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-name: bienvenida;
+  animation-iteration-count: infinite;
 }
 
 @media (max-width: 767px) {
-    img-index {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        @include tamanio(600px, 400px);
-        padding: 3rem;
-        margin-left: 15rem;
-        align-items: center;
-    }
+  img-index {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    @include tamanio(600px, 400px);
+    padding: 3rem;
+    margin-left: 15rem;
+    align-items: center;
+  }
 }

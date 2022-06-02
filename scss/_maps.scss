@@ -1,8 +1,9 @@
 /* EJEMPLO MAPS */
 $mapPlantas: (cactus: green, rosa: pink, jazmin: white);
 
-@each $plantas, $color in $mapPlantas {
-    .#{plantas} {
-        color: $color;
-    }
+@each $plantas,
+$color in $mapPlantas {
+  .#{plantas} {
+    color: $color;
+  }
 }

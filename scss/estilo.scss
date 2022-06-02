@@ -6,65 +6,65 @@
 @import "maps";
 
 * {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 html {
-    font-size: 70%;
+  font-size: 70%;
 }
 
 .fuente {
-    text-align: center;
+  text-align: center;
 }
 
 .fuenteGrande {
-    @extend .fuente;
-    color: black;
-    font-size: 70px;
-    background-color: rgb(150, 99, 99);
-    font-family: 'Dancing Script';
+  @extend .fuente;
+  color: black;
+  font-size: 70px;
+  background-color: rgb(150, 99, 99);
+  font-family: 'Dancing Script';
 }
 
 .fuenteMediana {
-    @extend .fuente;
-    font-size: 30px;
-    color: rgb(156, 78, 78);
-    margin: 10px;
+  @extend .fuente;
+  font-size: 30px;
+  color: rgb(156, 78, 78);
+  margin: 10px;
 }
 
 .fuentePequeña {
-    @extend .fuente;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(92, 88, 88);
+  @extend .fuente;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(92, 88, 88);
 }
 
 .bold {
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
-    color: white; 
-    text-align: center;
-    width: 80%;
-    font-size: 15px;
-    margin: 0 auto;
+  color: white;
+  text-align: center;
+  width: 80%;
+  font-size: 15px;
+  margin: 0 auto;
 }
 
 ul {
-    text-align: right;
-    position: sticky;
-    height: 70px;
-    z-index: 1;
-    margin: 0 auto;
-    top: 0px;
-    background-color: black;
+  text-align: right;
+  position: sticky;
+  height: 70px;
+  z-index: 1;
+  margin: 0 auto;
+  top: 0px;
+  background-color: black;
 }
 
 li {
-    color: white;
-    position: sticky;
+  color: white;
+  position: sticky;
   font-size: 30px;
   display: inline-block;
   margin-right: 20px;
@@ -73,70 +73,70 @@ li {
 }
 
 a {
-    font-size: 15px;
-    color: aliceblue;
-    text-decoration: none;
-    padding: 20px;
-    position: sticky;
+  font-size: 15px;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 20px;
+  position: sticky;
 }
 
 .font-mestizo {
-    font-family: 'Dancing Script';
-    font-size: 45px;
-    text-align: left;
-    position: relative;
+  font-family: 'Dancing Script';
+  font-size: 45px;
+  text-align: left;
+  position: relative;
 }
 
 /*LINK WHATSAPP*/
 .wa {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .enlaceWA {
-    size: 20%;
-    position: fixed;
-    right: 40px;
-    bottom: 10px;
-    z-index: 100;
-    color: white;
-    background-color: #d6ffd4;
-    box-shadow: 2px 2px 6px rgba(180, 175, 175, 0.4);
-    border-radius: 50%;
-    right: 30px;
-    bottom: 30px;
-    @include tamanio(40px, 40px);
-    padding: 1.5%;
-   }
-
-   .fondo {
-    background-color: beige;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+  size: 20%;
+  position: fixed;
+  right: 40px;
+  bottom: 10px;
+  z-index: 100;
+  color: white;
+  background-color: #d6ffd4;
+  box-shadow: 2px 2px 6px rgba(180, 175, 175, 0.4);
+  border-radius: 50%;
+  right: 30px;
+  bottom: 30px;
+  @include tamanio(40px, 40px);
+  padding: 1.5%;
 }
 
-    @media (max-width: 767px) {
-        ul {
-            text-align: right;
-            position: sticky;
-            height: 125px;
-            z-index: 1;
-            margin: 0 auto;
-            top: 0px;
-            background-color: black;
-        }
-    }
+.fondo {
+  background-color: beige;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
 
-    footer {
-        background-color: black;
-        padding: 10px;
-        color: white;
-    }
+@media (max-width: 767px) {
+  ul {
+    text-align: right;
+    position: sticky;
+    height: 125px;
+    z-index: 1;
+    margin: 0 auto;
+    top: 0px;
+    background-color: black;
+  }
+}
 
-    a:hover :not(:first-of-type){
-        text-decoration: underline;
-        color: rgb(150, 99, 99);
-    }
+footer {
+  background-color: black;
+  padding: 10px;
+  color: white;
+}
+
+a:hover :not(:first-of-type) {
+  text-decoration: underline;
+  color: rgb(150, 99, 99);
+}
